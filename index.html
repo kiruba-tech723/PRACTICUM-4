@@ -1,0 +1,38 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Legal Sphere</title> 
+<link rel="stylesheet" href="PRACTICUM 4.css"> 
+</head> 
+<body> 
+<h1>Legal Sphere</h1> 
+<p class="intro">Ready-to-use, <span class="highlight">lawyer-reviewed</span> legal 
+document templates.</p> 
+<h2>Our Products</h2> 
+<p>Every template is drafted with <em>careful attention</em> to detail.</p> 
+<div class="products"> 
+<div class="card"><h3>Rental Agreement</h3><p class="desc">Lease covering terms 
+and deposit.</p><div class="price">$15</div></div> 
+<div class="card"><h3>Employment Contract</h3><p class="desc">Role and 
+compensation terms.</p><div class="price"><span class="old">$30</span>$25</div></div> 
+<div class="card"><h3>NDA</h3><p class="desc">Protects confidential 
+information.</p><div class="price">$10</div></div> 
+</div> 
+</body> 
+</html> 
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap'); 
+body { font-family:'Roboto',sans-serif; font-size:16px; line-height:1.5; word
+spacing:3px; } 
+h1 { font-family:Arial,sans-serif; text-align:center; } 
+h2 { font-weight:bold; font-size:24px; text-decoration:underline; } 
+.intro { text-align:center; color:#00008B; } 
+.highlight { text-transform:uppercase; } 
+em { font-style:italic; letter-spacing:1px; } 
+p { text-indent:20px; } 
+.desc { text-indent:0; } 
+.old { text-decoration:line-through; } 
+.products { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; } 
+.price { font-weight:bold; font-size:20px; color:#8a6d00; } 
+@media (max-width:600px) { .products { flex-direction:column; } } 
